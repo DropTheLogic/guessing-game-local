@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Guessing Game!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />  
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Guessing Game!</h1>
+    </header>
+
+    <main>
+      <div id="submit-guess">
+        <input id="main-input-guess" placeholder="Guess a number, 1-100">
+        <button id="button-guess-submit" class="button--dark" role="submit">Guess!</button>
+      </div>
+
+      <div class="previous-guesses">
+        <h4 id="guess-message">FINAL GUESS!</h4>
+        <ul class="previous-guesses-list">
+          <li class="heat-level-5">
+            <span class="guess">80</span>
+            <span class="guess-heat-level">Smoking Hot!</span>
+          </li>
+          <li class="heat-level-4">
+            <span class="guess">75</span>
+            <span class="guess-heat-level">Heating up...</span>
+          </li>
+          <li class="heat-level-3">
+            <span class="guess">40</span>
+            <span class="guess-heat-level">Luke warm. I guess.</span>
+          </li>
+          <li class="heat-level-2">
+            <span class="guess">20</span>
+            <span class="guess-heat-level">Chilly. Try again.</span>
+          </li>
+          <li class="heat-level-1">
+            <span class="guess">1</span>
+            <span class="guess-heat-level">Brrr! Ice Cold.</span>
+          </li>
+        </ul>
+        <h4>Previous Guesses</h4>
+      </div>
+
+      <div class="action-buttons">
+        <button id="button-hint" class="button--green">Hint!</button>
+        <button id="button-reset" class="button--red">Reset</button>
+      </div>
+
+    </main>
+    
+  </body>
+</html>
