@@ -1,0 +1,222 @@
+body {
+    background: #f1f1f1;
+    background: repeating-linear-gradient( 90deg, #aaa, #f1f1f1 20%, #f1f1f1 80%, #aaa);
+  
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    color: #111;
+    margin: 0;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Bowlby One', cursive;
+  }
+  
+  button {
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+  
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: linear-gradient(180deg, rgb(255, 255, 255), #f1f1f1);
+    outline: none;
+  }
+  
+  button:active {
+    background: linear-gradient(0deg, rgb(255, 255, 255), #f1f1f1);
+  }
+  
+  .action-buttons {
+    margin-top: 4px;
+    padding: 6px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+  
+  .action-buttons button {
+    min-width: 80px;
+    padding: 8px;
+  }
+  
+  .button--green {
+    color: #fff;
+    background: linear-gradient(to bottom, rgb(17, 211, 26), rgb(15, 173, 23));
+    border: 1px solid rgb(12, 134, 18);
+  }
+  
+  .button--green:active {
+    background: linear-gradient(0deg, rgb(17, 211, 26), rgb(15, 173, 23));
+  }
+  
+  .button--red {
+    color: #fff;
+    background: linear-gradient(to bottom, rgb(196, 33, 33), rgb(168, 29, 29));
+    border: 1px solid rgb(94, 17, 17);
+  }
+  
+  .button--red:active {
+    background: linear-gradient(0deg, rgb(196, 33, 33), rgb(168, 29, 29));
+  }
+  
+  .button--dark {
+    color: #fff;
+    background: linear-gradient(180deg, #444, #222);
+    border: 1px solid #666;
+  }
+  
+  .button--dark:active {
+    background: linear-gradient(0deg, #444, #222);
+  }
+  
+  main {
+    width: 75%;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header {
+    padding: 20px;
+    background: #222;
+    box-shadow: 0 0 16px #666;
+  }
+  
+  header h1 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    width: 75%;
+    max-width: 600px;
+  
+    color: rgb(245, 243, 243);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12vmin;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: -1.5px;
+    text-shadow:0 0 16px #ffe606ad;
+  
+    border: 1.75vmin dotted #ffe606;
+  
+    transform: rotate(-1.75deg);
+  }
+  
+  #submit-guess {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  
+    border: 1px solid #666;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #ccc;
+  }
+  
+  #main-input-guess {
+    display: inline-block;
+    flex-grow: 1;
+    padding: 10px;
+  
+    font-family: 'Cabin', sans-serif;
+    font-size: 110%;
+    text-align: center;
+  
+    outline: none;
+    border: none;
+    border-radius: 6px 0 0 6px;
+  }
+  
+  #button-guess-submit {
+    display: inline-block;
+    text-shadow: 0 0 8px #ffe606ad;
+    border: none;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .previous-guesses {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .previous-guesses h4 {
+    margin: 4px 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: -.25px;
+  }
+  .previous-guesses #guess-message {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    font-size: 120%;
+  }
+  
+  .previous-guesses ul {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 190px;
+    list-style: none;
+  }
+  
+  .previous-guesses li {
+    height: 38px;
+    margin: 2px 0;
+  }
+  
+  .previous-guesses li:nth-of-type(2) {
+    opacity: .9;
+    font-size: 95%;
+  }
+  
+  .previous-guesses li:nth-of-type(3) {
+    opacity: .8;
+    font-size: 90%;
+  }
+  
+  .previous-guesses li:nth-of-type(4) {
+    opacity: .7;
+    font-size: 85%;
+  }
+  
+  .previous-guesses li:nth-of-type(5) {
+    opacity: .6;
+    font-size: 80%;
+  }
+  
+  .guess {
+    background: #fff;
+  
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 6px;
+    border-radius: 3px;
+    height: 22px;
+    min-width: 22px;
+  
+    font-weight: 900;
+  
+    text-align: center;
+  }
+  
+  .heat-level-5 {
+    color: #ff0000;
+  }
+  
+  .heat-level-4 {
+    color: #d11220;
+  }
+  
+  .heat-level-3 {
+    color: #8f2c4d;
+  }
+  
+  .heat-level-2 {
+    color: #594071;
+  }
+  
+  .heat-level-1 {
+    color: #1e5799;
+  }
